@@ -1,0 +1,151 @@
+*{
+    margin: 0%;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.main{
+    width: 100%;
+    background-color: white;
+}
+header{
+    height: 120px;
+    color: white;
+    background-color: aliceblue;
+    align-items: center;
+    display: flex;
+    padding: 0 2vw;
+}
+.leftnav{
+    width: 40%;
+}
+.rightnav{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+.rightnav ul{
+    list-style: none;
+    color: black;
+    display: flex;
+    font-size: 2vw;
+    gap: 25px;
+}
+button{
+    padding: 5px 10px;
+    font-size: 1.2vw;
+    border: 2px solid red;
+}
+.menu{
+    display: none;
+    font-size: 1.1vw;
+}
+#page1{
+    width: 100%;
+    display: flex;
+}
+.leftside{
+    width: 50%;
+    height: 100%;
+    
+}
+.rightside{
+    width: 50%;
+    height: 100%;
+}
+.leftside h1{
+    color: black;
+    margin-top: 5vw;
+    font-weight: 500;
+    padding-left: 3vw;
+}
+.leftside p{
+    color: black;
+    margin-top: 2vw;
+    padding-left: 3vw;
+    margin-bottom: 1.2vw;
+    flex-wrap: wrap;
+}
+button{
+    padding: 15px 15px;
+    font-size: 12px;
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    margin-left: 2.8vw;
+}
+.box{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media (min-width: 1028px) {
+}
+.rightnav ul{
+    font-size: 1.8vw;
+}
+
+@media (max-width: 768px) {
+    .rightnav ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+
+    }
+    .rightnav{
+        padding-left: 50vw;
+    }
+    #page1{
+        flex-direction: column;
+    }
+    .leftside{
+        width: 90%;
+    }
+    .rightside{
+        width: 100%;
+    }
+}
+@media (max-width: 428px) {
+    header{
+        width: 150%;
+    }
+    .box>img{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .rightnav ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+
+    }
+    .rightnav{
+        padding-left: 50vw;
+    }
+    #page1{
+        flex-direction: column;
+    }
+    .leftside{
+        width: 100%;
+        padding-left: 9vw;
+        flex-direction: column;
+    }
+    .rightside .img{
+        width: 180px;
+        padding-left: 20vw;
+    }
+    .rightside{
+        width: 100%;
+        flex-direction: column;
+    }
+    .leftside>button{
+        width: 35vw;
+        margin-top: 5vh;
+    }
+    
+}
